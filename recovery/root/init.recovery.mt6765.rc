@@ -1,0 +1,11 @@
+on init
+    export ANDROID_ROOT /system_root
+    mkdir /config
+    mount configfs none /config
+
+on post-fs
+    # Support A/B feature for emmc boot region
+    symlink /dev/block/sda /dev/block/mmcblk0boot0
+    symlink /dev/block/sdb /dev/block/mmcblk0boot1
+    symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a
+    symlink /dev/block/mmcblk0boot1 /dev/block/platform/bootdevice/by-name/preloader_b
