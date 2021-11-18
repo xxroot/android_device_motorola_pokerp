@@ -25,3 +25,21 @@ ro.sys.usb.storage.type=mtp
 ro.pt.mtp_name=moto e(6) plus
 ro.pt.mtp.print.model=moto e(6) plus
 ro.pt.mtp_pc_name=moto e(6) plus
+#
+ro.vendor.build.fingerprint=motorola/pokerp_reteu/pokerp:9/PTAS29.401-25-4/25-4:user/release-keys
+ro.product.board=p161m
+ro.board.platform=mt6765
+ro.product.vendor.manufacturer=motorola
+ro.product.vendor.model=moto e(6) plus
+ro.product.vendor.brand=motorola
+ro.product.vendor.name=pokerp_reteu
+ro.product.vendor.device=pokerp
+ro.vendor.product.name=pokerp_reteu
+ro.vendor.product.display=moto e⁶ plus
+#
+ro.mediatek.platform=MT6765
+ro.vendor.mediatek.platform=MT6765
+ro.vendor.mtk_f2fs_enable=0
+ro.vendor.mtk_microtrust_tee_support=1
+ro.crypto.volume.filenames_mode=aes-256-cts
+#
