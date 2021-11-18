@@ -25,3 +25,10 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto E6 Plus
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_RELEASE_NAME := Moto E6 Plus
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=pokerp \
+    PRODUCT_NAME=pokerp_reteu \
+    PRIVATE_BUILD_DESC="full_p161m-user 9 PTAS29.401-25-4 25-4 release-keys"
+
+BUILD_FINGERPRINT := motorola/pokerp_reteu/pokerp:9/PTAS29.401-25-4/25-4:user/release-keys
