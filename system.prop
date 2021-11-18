@@ -26,7 +26,8 @@ ro.pt.mtp_name=moto e(6) plus
 ro.pt.mtp.print.model=moto e(6) plus
 ro.pt.mtp_pc_name=moto e(6) plus
 #
-ro.vendor.build.fingerprint=motorola/pokerp_reteu/pokerp:9/PTAS29.401-25-4/25-4:user/release-keys
+ro.hardware.chip=mt6762
+ro.sf.lcd_density=280
 ro.product.board=p161m
 ro.board.platform=mt6765
 ro.product.vendor.manufacturer=motorola
