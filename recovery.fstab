@@ -10,6 +10,7 @@
 /system_image       emmc    /dev/block/platform/bootdevice/by-name/system        flags=display="System Image";backup=1;flashimg=1
 /vendor_image       emmc    /dev/block/platform/bootdevice/by-name/vendor        flags=display="Vendor Image";backup=1;flashimg=1
 /vbmeta             emmc    /dev/block/platform/bootdevice/by-name/vbmeta        flags=display="Vbmeta Image";backup=1;flashimg=1
+/metadata		        emmc	 /dev/block/platform/bootdevice/by-name/metadata
 
 # System and Vendor (and Product) Points
 /system_root        ext4    /dev/block/platform/bootdevice/by-name/system        flags=display="System";backup=1;wipeingui
@@ -17,7 +18,7 @@
 
 # Cache and ETC Points
 /cache              ext4    /dev/block/platform/bootdevice/by-name/cache         flags=display="Cache";backup=1;wipeingui
-/data               ext4    /dev/block/platform/bootdevice/by-name/userdata      flags=display="Data";backup=1;wipeingui
+/data               ext4    /dev/block/platform/bootdevice/by-name/userdata      flags=display="Data";backup=1;wipeingui;fileencryption=aes-256-cts
 
 # SD Card and OTG Points
 /external_sd        auto    /dev/block/mmcblk1p1  /dev/block/mmcblk1             flags=display="MicroSD Card";storage;wipeingui;removable
