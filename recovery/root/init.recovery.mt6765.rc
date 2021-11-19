@@ -4,6 +4,11 @@ on init
     export ANDROID_ROOT /system_root
     mkdir /config
     mount configfs none /config
+    # Create a more standard /dev/block layout for our scripts
+    wait /dev/block/platform/bootdevice	
+    symlink /dev/block/platform/bootdevice /dev/block/bootdevice
+    mkdir /mnt/vendor/persist 0700 root root
+    mount ext4 /dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist
 
 on fs
     install_keyring
