@@ -43,4 +43,4 @@ ro.vendor.mediatek.platform=MT6765
 ro.vendor.mtk_f2fs_enable=0
 ro.vendor.mtk_microtrust_tee_support=1
 ro.crypto.volume.filenames_mode=aes-256-cts
-#
+##
